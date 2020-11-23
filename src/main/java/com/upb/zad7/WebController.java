@@ -16,8 +16,8 @@ public class WebController {
 
     @GetMapping("/index")
     public String form(Model model, RedirectAttributes redirAttrs,
-                               @RequestParam(value = "meno", required = true) String username) {
-        redirAttrs.addFlashAttribute("error", "Hi " + username);
+                               @RequestParam(value = "name", required = true) String username) {
+        redirAttrs.addFlashAttribute("msg", "Hi " + username);
         return "redirect:/";
     }
 }

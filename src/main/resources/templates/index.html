@@ -10,16 +10,16 @@
 </head>
 <body>
 
-<h2>Not secure site</h2>
+<h2>Secure site</h2>
 
 
 <form action="/index" method="get">
-    <label for="meno">Your name:</label><br>
-    <input class="text" type="text" id="meno" name="meno" required><br><br>
+    <label for="name">Your name:</label><br>
+    <input class="text" type="text" id="name" name="name" required><br><br>
     <input class="button" type="submit" value="Submit">
 </form>
 
-<p role="alert" th:text="${error}" th:if="${error}"></p>
+<p role="alert" th:text="${msg}" th:if="${msg}"></p>
 
 </body>
 </html>
